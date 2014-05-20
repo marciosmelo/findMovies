@@ -1,0 +1,15 @@
+<form data-ng-submit="pesquisar()">
+    <input type="search" name="searchMovies" data-ng-model="titulo" />
+   	<button type="submit" data-ng-disabled="!titulo">Pesquisar</button>
+    <button type="button" data-ng-disabled="!titulo" data-ng-click="limpar()">Limpar</button>
+</form>
+<div>
+    <ul>
+        <li data-ng-repeat="item in itens">
+            {{item.original_title}}
+        </li>
+    </ul>
+</div>
+<div data-ng-show="loading">
+    <em>Carregando...</em>
+</div>
