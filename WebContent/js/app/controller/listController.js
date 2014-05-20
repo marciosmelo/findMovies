@@ -21,7 +21,7 @@ findMoviesApp.controller('ListController', function($scope) {
  
 	
 	$scope.limpar = function() {
-        $scope.title = "";
+        $scope.titulo = "";
         $scope.itens = [ ];
         $scope.loading = false;
     };
