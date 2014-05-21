@@ -4,7 +4,7 @@ findMoviesApp.controller('ListController', function($scope) {
 	
 	$scope.pesquisar = function() {
         $scope.itens = [ ];
-        //$scope.loading = true;
+        $scope.loading = true;
         
         theMovieDb.search.getMovie({"query":$scope.titulo}, 
         		function(data){
