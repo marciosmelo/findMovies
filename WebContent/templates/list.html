@@ -5,6 +5,8 @@
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
         <span class="sr-only">Alternar Navega&ccedil;&atilde;o</span>
         <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="#">Pesquisar</a>
     </div>
@@ -26,13 +28,14 @@
   </div>
 </nav>
 
+
 <div class="container-fluid">
 <div class="row">
   <div class="col-sm-6 col-md-4" data-ng-repeat="item in itens">
     <div class="thumbnail">
-      <h4>{{item.original_title}} ({{item.release_date | date:'yyyy'}})</h4>
+      <h4 class="titulo">{{item.original_title}} ({{item.release_date | date:'yyyy'}})</h4>
       <a href="#" data-ng-href="#detail/{{item.id}}">
-      <img alt="{{item.original_title}}" src="#" data-ng-src="http://image.tmdb.org/t/p/w185/{{item.poster_path}}" class="img-responsive" />
+      <img alt="{{item.original_title}}" src="#" data-ng-src="http://image.tmdb.org/t/p/w185/{{item.poster_path}}"  class="img-responsive" />
       </a>
     </div>
   </div>
@@ -55,5 +58,12 @@
 	</div>
    https://image.tmdb.org/t/p/w92/
    http://image.tmdb.org/t/p/w185/
+    $original = "images/themoviedb/p/original";
+ $w45 = "images/themoviedb/p/w45";
+ $w92 = "images/themoviedb/p/w92";
+ $w130 = "images/themoviedb/p/w130/"; 
+ $w154 = "images/themoviedb/p/w154/";
+ $w185 = "images/themoviedb/p/w185/";
+ $w780 = "images/themoviedb/p/w780/";
     -->
 

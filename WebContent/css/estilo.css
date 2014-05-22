@@ -1,0 +1,16 @@
+@CHARSET "ISO-8859-1";
+
+.titulo{
+	text-align: center;
+}
+
+.imageClip{
+    width:35%;
+    height:auto;
+    overflow:hidden;
+ }
+ 
+ .detalhe{
+ 	width: 70%
+ 
+ }

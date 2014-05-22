@@ -1,3 +1,60 @@
+<div class="panel panel-info detalhe">
+	<div class="panel-heading">
+    	<h3 class="panel-title">{{movie.original_title}} ({{movie.release_date | date:'yyyy'}})</h3>
+  	</div>
+  
+  <div class="panel-body">
+  
+  	<blockquote>{{movie.tagline}}</blockquote>
+  	
+  	<ul class="media-list">
+  		<li class="media">
+    		<a class="pull-left" href="#">
+      		<img alt="{{movie.original_title}}" src="#" data-ng-src="http://image.tmdb.org/t/p/w185/{{movie.poster_path}}"  class="media-object" />
+   		</a>
+   		<div class="media-body">
+      		<p>{{movie.overview}}</p>
+			<table class="table table-hover">
+		    	<tr class="row">
+		    		<td>Diretor(es)</td>
+		    		<td><span data-ng-repeat="director in crewList | filter:{job:'Director'} "><em> {{director.name}},</em></span>.</td>
+		    	</tr>
+		    	<tr class="row">
+		    		<td>Roteirista(s)</td>
+		    		<td><span data-ng-repeat="roteirista in crewList | filter:{department:'Writing'} "><em> {{roteirista.name}},</em></span>.</td>
+		    	</tr>
+		    	<tr class="row">
+		    		<td>Elenco</td>
+		    		<td><span data-ng-repeat="actor in castList"><em> {{actor.name}},</em></span>.</td>
+		    	</tr>
+		    		
+		    	<tr class="row">
+		    		<td>Nota</td>
+		    		<td>{{movie.vote_average}}</td>
+		    	</tr>	
+		    	<tr class="row">
+		    		<td>Lan&ccedil;amento</td>
+		    		<td>{{movie.release_date | date:'dd/MM/yyyy';}}</td>
+		    	</tr>	
+		    	<tr class="row">
+		    		<td>G&ecirc;nero(s)</td>
+		    		<td><span data-ng-repeat="genre in movie.genres"><em> {{genre.name}},</em></span>.</td>
+		    	</tr>
+  			</table>
+   
+   		</div>
+  		</li>
+	</ul>
+  		
+  
+  	
+  </div>
+  
+  <div class="panel-footer"><a href="#" data-ng-click="voltar();">Voltar</a></div>
+</div>
+
+
+<!-- 
 <h2>{{movie.original_title}}</h2>
 <ul>
 	<li>Lan&ccedil;amento: {{movie.release_date | date:'dd/MM/yyyy';}}</li>
@@ -9,3 +66,4 @@
 	<li>Sinopse: {{movie.overview}}</li>
 </ul>
 <a href="#" data-ng-click="voltar();">Voltar</a>
+-->

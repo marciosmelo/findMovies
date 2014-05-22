@@ -12,9 +12,10 @@ findMoviesApp.controller('DetailController', function($scope,$routeParams,$locat
 				console.log("Error Movie callback: " + data);
 			});
 	
-	theMovieDb.credits.getCredit({"id":$routeParams.movieId},
+	theMovieDb.movies.getCredits({"id":$routeParams.movieId},
 			function(data){
-				$scope.credits = angular.fromJson(data);
+				$scope.castList = angular.fromJson(data).cast;
+				$scope.crewList = angular.fromJson(data).crew;
 				$scope.$apply();
 			},
 			function(data){
