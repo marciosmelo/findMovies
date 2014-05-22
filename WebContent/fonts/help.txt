@@ -1,0 +1,11 @@
+ //Caminho com tamanho das imagens do themoviedb
+ 
+ https://image.tmdb.org/t/p/w92/
+ http://image.tmdb.org/t/p/w185/
+ $original = "images/themoviedb/p/original";
+ $w45 = "images/themoviedb/p/w45";
+ $w92 = "images/themoviedb/p/w92";
+ $w130 = "images/themoviedb/p/w130/"; 
+ $w154 = "images/themoviedb/p/w154/";
+ $w185 = "images/themoviedb/p/w185/";
+ $w780 = "images/themoviedb/p/w780/";
