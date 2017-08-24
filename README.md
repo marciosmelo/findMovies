@@ -1,4 +1,5 @@
 # findMovies
+A brief study of the basics of AngularJS
 
 ## Synopsis
 
@@ -17,4 +18,5 @@ Improve my skills using an API and the AngularJs Framework
 ## Tests
 
 No tests implemented yet. Shame, shame, shame...
+
 
